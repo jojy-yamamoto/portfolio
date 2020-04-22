@@ -1,0 +1,73 @@
+// Styling for the portfolio grid section
+.portfolio {
+  padding-top: calc(5rem + 104px);
+  margin-bottom: -30px;
+
+  h1{
+    padding-bottom: 4rem;
+  }
+  .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .portfolio-item-caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: $transition-base;
+      opacity: 0;
+      background-color: fade-out($primary, .1);
+      &:hover {
+        opacity: 1;
+      }
+      .portfolio-item-caption-content {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+// Styling for the portfolio modals
+.portfolio-modal {
+  .modal-content {
+    border-radius: 0;
+    .modal-header{
+      padding: 1.2rem 1rem;
+      h2{
+        margin-bottom: 0px;
+      }
+    }
+    .modal-body{
+      padding: 0px 0px 20px;
+    }
+    p{
+      color: $gray-800;
+    }
+    a{
+      text-decoration: underline;
+      color:#1774b8;
+    }    
+    a:hover{
+      text-decoration: none;
+    }    
+  }
+  .portfolio-modal-title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: $gray-800;
+  }
+  .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $gray-800;
+    opacity: 1;
+  }
+}

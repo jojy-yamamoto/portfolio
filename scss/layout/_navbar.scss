@@ -1,0 +1,60 @@
+// Styling for the navbar
+#mainNav {
+  background-color: white;
+  border-bottom: solid 1px #e9ecef;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .navbar-brand {
+    color: white;
+    img{
+      width: 4.5rem;
+    }
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    li.nav-item {
+      a.nav-link {
+        color: $primary;
+        &:hover, &:active, &:focus {
+          border-bottom: solid $primary 3px;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem; 
+  }
+}
+@include media-breakpoint-up(lg) {
+  #mainNav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    .navbar-brand {
+      font-size: 1.75em;
+      transition: font-size 0.3s;
+    }
+    .navbar-nav {
+      margin-top: 0;
+    }
+    .navbar-nav > li.nav-item > a.nav-link.active {
+      border-bottom: solid $primary 3px;
+      &:active,
+      &:focus,
+      &:hover {
+        border-bottom: solid $primary 3px;
+      }
+    }
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    .navbar-brand {
+      font-size: 1.5em;
+      img{
+        width: 2.5em;
+      }
+    }
+  }
+}
