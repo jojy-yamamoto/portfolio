@@ -7365,3 +7365,27 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   margin: auto; }
+
+@media screen and (max-width: 768px) {
+  .page-section {
+    padding: 2rem 0; }
+  h1.text-primary, h2.mb-5 {
+    font-size: 1.5rem !important;
+    margin-bottom: 2rem !important; }
+  #mainNav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+    #mainNav .navbar-brand img {
+      width: 3.5rem; }
+  .portfolio {
+    padding-top: calc(1rem + 104px); }
+  .about img {
+    margin-bottom: 2rem; }
+  .about .lead {
+    font-size: 1.1rem;
+    font-weight: 300; }
+  .footer .social {
+    text-align: left !important;
+    margin-bottom: 0rem !important; }
+  .footer .btn-social {
+    margin-left: -10px !important; } }
