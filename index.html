@@ -450,6 +450,15 @@
 
   <script src="js/freelancer.min.js"></script> 
 
+  <script>
+    $("#portfolioModal3").on('hidden.bs.modal', function (e) {
+        $("#portfolioModal3 iframe").attr("src", $("#portfolioModal3 iframe").attr("src"));
+    });
+    $("#portfolioModal7").on('hidden.bs.modal', function (e) {
+        $("#portfolioModal7 iframe").attr("src", $("#portfolioModal7 iframe").attr("src"));
+    });
+  </script>
+
 
 
 </body>
